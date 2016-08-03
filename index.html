@@ -1,31 +1,28 @@
 <html>
 <head>
   <title>The page for CSC</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body ng-app="CscControl" ng-controller="cscctrl">
+  <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <ul class="list-unstyled">
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
-        <li><a href="">Wefwefw</a></li>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info" ng-repeat="site in sites"><a href="{{site.link}}">{{site.name}}</a></li>
       </ul>
     </div>
     <div class="col-md-4">
-      <ul class="list-unsytled">
-        <li ng-repeat="contact in contacts">{{contact.name}}kno{{contact.no}}</li>
-      </ul>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info" ng-repeat="contact in contacts">
+         <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;{{contact.name}}&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;{{contact.no}}
+       </li>
+     </div>
     </div>
+  </div>
 
-  <script type="text/javascript" src="js/controller.js" />
-  <script type="text/javascript" src="js/bootstrap.js" />
-  <script type="text/javascript" src="js/angular.min.js" />
-  <script type="text/javascript" src="js/jquery-2.2.2.min.js" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js" ></script>
+<script type="text/javascript" src="js/controller.js"></script>
 </body>
 </html>
