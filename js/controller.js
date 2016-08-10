@@ -10,7 +10,7 @@ CscControl.controller("cscctrl",function($scope){
       {name:'Deepika',no:'700024'},
       {name:'Ajay',no:'705230'},
       {name:'Chithravel',no:'706334'},
-      {name:'Manikanda',no:'708718'},
+      {name:'Manikanta',no:'708718'},
       {name:'Deva',no:'722300'},
       {name:'Kavitha',no:'704732'},
       {name:'Prasanth',no:'709051'},
@@ -24,7 +24,7 @@ CscControl.controller("cscctrl",function($scope){
         {name:'Workday',link:"https://www.myworkday.com/csc/d/home.htmld"},
         {name:'CSS',link:"https://www.csc.com/css_in"},
         {name:'CSC University',link:"https://csc.skillport.com/skillportfe/custom/login/csc/csclanding.action"},
-        {name:'Complainets',link:"http://chat.csc.com/"},
+        {name:'CHAT',link:"http://chat.csc.com/"},
         {name:'Portal',link:"https://in.portal.csc.com/"},
         {name:'Attendace',link:"https://etes.csc.com"}];
 
